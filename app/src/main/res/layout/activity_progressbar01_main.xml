@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffccff99"
+    android:padding="8dp"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_run"
+        android:text="실행"
+
+        android:layout_alignLeft="@+id/progressbar_horizontal"
+        android:layout_below="@+id/progressbar_horizontal"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="66dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_cancel"
+        android:text="취소"
+
+        android:layout_alignBottom="@+id/button_run"
+        android:layout_toRightOf="@+id/button_run"
+        android:layout_marginLeft="40dp"
+        android:layout_alignBaseline="@+id/button_run"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_1"
+        android:text="진행상태"
+
+
+        android:layout_alignLeft="@+id/progressbar_horizontal"
+        android:layout_marginTop="35dp"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="50dp"
+
+        />
+
+</RelativeLayout>
